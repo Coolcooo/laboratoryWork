@@ -5,7 +5,7 @@ using namespace std;
 template <typename T,typename P>
 void SumElementsArray (P array[], T numberMinIndex,P varriableForCounter,T amountAllElements)
 {
-	for(int i=numberMinIndex;i<amountAllElements;i++)//ñêëàäûâàþ â öèêëå âñå ýëåìåíòû ïîñëå ìèíèìàëüíîãî 
+	for(int i=numberMinIndex;i<amountAllElements;i++)//Ã±ÃªÃ«Ã Ã¤Ã»Ã¢Ã Ã¾ Ã¢ Ã¶Ã¨ÃªÃ«Ã¥ Ã¢Ã±Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã» Ã¯Ã®Ã±Ã«Ã¥ Ã¬Ã¨Ã­Ã¨Ã¬Ã Ã«Ã¼Ã­Ã®Ã£Ã® 
 	{
 		varriableForCounter += array[i];
 	};
@@ -28,7 +28,7 @@ void SumNullElementsAndMinIndex (T array[],int NullAmount,int minIndex,T minElem
 			if(array[i] < minElement)
 			{
 				minElement=array[i];
-				minIndex = i+1;//ïðèñâàèâàþ èíäåêñ ýëåìåíòà íà 1 áîëüøå,÷åì ìèíèìàëüíûé
+				minIndex = i+1;//Ã¯Ã°Ã¨Ã±Ã¢Ã Ã¨Ã¢Ã Ã¾ Ã¨Ã­Ã¤Ã¥ÃªÃ± Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã­Ã  1 Ã¡Ã®Ã«Ã¼Ã¸Ã¥,Ã·Ã¥Ã¬ Ã¬Ã¨Ã­Ã¨Ã¬Ã Ã«Ã¼Ã­Ã»Ã©
 			}
 }
 };
@@ -39,8 +39,8 @@ void sortElements (T array[],P amountAllElements)
 	{
 		for(int j=1;j<amountAllElements;j++)
 		{
-			if (abs(array[j])<abs(array[j-1]))//cîðòèðóþ ýëåìåíòû ïî èõ ìîäóëþ,êîãäà ïîëó÷èë âñå íóæíûå çíà÷åíèÿ èç ïåðâîãî ïóíêòà
-													//(â ïåðåñòàíîâêå ýëåìåíòîâ ìîäóëü íå ó÷èòûâàþ)
+			if (abs(array[j])<abs(array[j-1]))//cÃ®Ã°Ã²Ã¨Ã°Ã³Ã¾ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã» Ã¯Ã® Ã¨Ãµ Ã¬Ã®Ã¤Ã³Ã«Ã¾,ÃªÃ®Ã£Ã¤Ã  Ã¯Ã®Ã«Ã³Ã·Ã¨Ã« Ã¢Ã±Ã¥ Ã­Ã³Ã¦Ã­Ã»Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¿ Ã¨Ã§ Ã¯Ã¥Ã°Ã¢Ã®Ã£Ã® Ã¯Ã³Ã­ÃªÃ²Ã 
+													//(Ã¢ Ã¯Ã¥Ã°Ã¥Ã±Ã²Ã Ã­Ã®Ã¢ÃªÃ¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢ Ã¬Ã®Ã¤Ã³Ã«Ã¼ Ã­Ã¥ Ã³Ã·Ã¨Ã²Ã»Ã¢Ã Ã¾)
 			{
 				int t;
 				t=array[j];
